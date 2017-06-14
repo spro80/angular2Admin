@@ -3,9 +3,13 @@
 
 <menu> {{mensajeMenu}} </menu>
 
+<!--<categoriasList> {{datoCategoria}} </categoriasList>-->
+
     <ul>
         <li> <a href="login.html"> Login </a>  </li>
-        <li> <a href="categorias.html"> Categorias </a>  </li>
+        <li> <a [routerLink]="['Categorias']">Listar Categoria</a> </li>
     <ul>
+
+<router-outlet></router-outlet>
 
 <footer> {{mensajeFooter}} </footer>
