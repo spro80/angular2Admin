@@ -2,12 +2,13 @@
 import {Component} from 'angular2/core'
 import {CategoriasService} from '../services/categorias.service'
 
+import {HTTP_PROVIDERS} from 'angular2/http';
 
 // Decorador component, indicamos en que etiqueta se va a cargar la plantilla
 @Component({
     selector:    "categoriasList",
     templateUrl: "app/view/categoriasList.html",
-    providers: [ CategoriasService ]
+    providers: [ CategoriasService, HTTP_PROVIDERS ]
 })
 
 
